@@ -5,7 +5,6 @@ console.log("working");
 let map = L.map('mapid').setView([34.0522, -118.2437], 4);
 
 
-
 // An array containing each city's location, state, and population.
 let cities = [{
     location: [40.7128, -74.0059],
@@ -49,8 +48,6 @@ cityData.forEach(function(city) {
     .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population + "</h3>")
   .addTo(map);
 });
-
-
 
 
 // We create the tile layer that will be the background of our map.
